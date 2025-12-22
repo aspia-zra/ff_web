@@ -321,25 +321,40 @@ const Home = () => {
       {/* Why Choose Us Section */}
       <section id="why-choose-us" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-[#D4AF37]">Why Choose Us?</h2>
-            <p className="text-gray-400 text-lg">Trusted by the Keynsham community</p>
-          </div>
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-4 text-[#D4AF37]">Why Choose Us?</h2>
+              <p className="text-gray-400 text-lg">Trusted by the Keynsham community</p>
+            </div>
+          </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {whyChooseUs.map((reason) => (
-              <Card key={reason.id} className="bg-gray-900/30 border-gray-800">
-                <CardContent className="p-8 flex items-start space-x-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-cyan-600/10 rounded-lg flex items-center justify-center text-cyan-400">
-                      {getIcon(reason.icon)}
+            {whyChooseUs.map((reason, index) => (
+              <motion.div
+                key={reason.id}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.03 }}
+              >
+                <Card className="bg-gray-900/30 border-gray-800 hover:border-cyan-600 transition-all duration-300">
+                  <CardContent className="p-8 flex items-start space-x-4">
+                    <motion.div 
+                      className="flex-shrink-0"
+                      whileHover={{ rotate: [0, -10, 10, -10, 0] }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      <div className="w-16 h-16 bg-cyan-600/10 rounded-lg flex items-center justify-center text-cyan-400">
+                        {getIcon(reason.icon)}
+                      </div>
+                    </motion.div>
+                    <div>
+                      <h3 className="text-2xl font-semibold mb-2 text-[#D4AF37]">{reason.title}</h3>
+                      <p className="text-gray-400">{reason.description}</p>
                     </div>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-semibold mb-2 text-[#D4AF37]">{reason.title}</h3>
-                    <p className="text-gray-400">{reason.description}</p>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>
