@@ -122,7 +122,7 @@ const Home = () => {
                   <div className="inline-flex items-center justify-center w-20 h-20 bg-cyan-600/10 rounded-lg mb-4 text-cyan-400">
                     {getIcon(service.icon)}
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-[#D4AF37]">{service.title}</h3>
                   <p className="text-gray-400">{service.description}</p>
                 </CardContent>
               </Card>
