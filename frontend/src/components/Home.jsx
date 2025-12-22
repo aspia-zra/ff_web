@@ -199,7 +199,7 @@ const Home = () => {
                   <div className="flex items-start space-x-4">
                     <MapPin className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-lg font-semibold mb-2">Address</h3>
+                      <h3 className="text-lg font-semibold mb-2 text-[#D4AF37]">Address</h3>
                       <p className="text-gray-300">{businessData.address}</p>
                       <Button 
                         onClick={handleDirectionsClick} 
