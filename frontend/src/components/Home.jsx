@@ -172,6 +172,57 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Gallery Section - Our Work */}
+      <section className="py-20 px-6 bg-[#0f0f11]">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4 text-[#D4AF37]">Professional Repairs</h2>
+            <p className="text-gray-400 text-lg">Quality workmanship on every repair</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="group relative overflow-hidden rounded-lg border border-gray-800 hover:border-cyan-600 transition-all duration-300">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_phonedoc-keynsham/artifacts/ytridwge_2023-05-05.jpg"
+                alt="Phone repair work in progress"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                <div>
+                  <h3 className="text-white font-semibold text-lg mb-1">Expert Disassembly</h3>
+                  <p className="text-gray-300 text-sm">Careful component-level repairs</p>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-lg border border-gray-800 hover:border-cyan-600 transition-all duration-300">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_phonedoc-keynsham/artifacts/vbogs52z_2023-08-18.jpg"
+                alt="Damaged phone assessment"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                <div>
+                  <h3 className="text-white font-semibold text-lg mb-1">Damage Assessment</h3>
+                  <p className="text-gray-300 text-sm">We repair all types of damage</p>
+                </div>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-lg border border-gray-800 hover:border-cyan-600 transition-all duration-300">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_phonedoc-keynsham/artifacts/kulmhe1b_2024-10-14.jpg"
+                alt="Internal phone repair"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                <div>
+                  <h3 className="text-white font-semibold text-lg mb-1">Precision Repairs</h3>
+                  <p className="text-gray-300 text-sm">Advanced diagnostic tools</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section id="why-choose-us" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
