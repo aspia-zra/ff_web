@@ -223,21 +223,36 @@ const Home = () => {
       {/* Services Section */}
       <section id="services" className="py-20 px-6 bg-[#111113]">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-[#D4AF37]">Our Services</h2>
-            <p className="text-gray-400 text-lg">Expert repairs for all your mobile phone needs</p>
-          </div>
+          <AnimatedSection>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-4 text-[#D4AF37]">Our Services</h2>
+              <p className="text-gray-400 text-lg">Expert repairs for all your mobile phone needs</p>
+            </div>
+          </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service) => (
-              <Card key={service.id} className="bg-gray-900/50 border-gray-800 hover:border-cyan-600 transition-all duration-300 hover:transform hover:scale-105">
-                <CardContent className="p-6 text-center">
-                  <div className="inline-flex items-center justify-center w-20 h-20 bg-cyan-600/10 rounded-lg mb-4 text-cyan-400">
-                    {getIcon(service.icon)}
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3 text-[#D4AF37]">{service.title}</h3>
-                  <p className="text-gray-400">{service.description}</p>
-                </CardContent>
-              </Card>
+            {services.map((service, index) => (
+              <motion.div
+                key={service.id}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ scale: 1.05, y: -5 }}
+              >
+                <Card className="bg-gray-900/50 border-gray-800 hover:border-cyan-600 transition-all duration-300 h-full">
+                  <CardContent className="p-6 text-center">
+                    <motion.div 
+                      className="inline-flex items-center justify-center w-20 h-20 bg-cyan-600/10 rounded-lg mb-4 text-cyan-400"
+                      whileHover={{ rotate: 360 }}
+                      transition={{ duration: 0.5 }}
+                    >
+                      {getIcon(service.icon)}
+                    </motion.div>
+                    <h3 className="text-xl font-semibold mb-3 text-[#D4AF37]">{service.title}</h3>
+                    <p className="text-gray-400">{service.description}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
             ))}
           </div>
         </div>
