@@ -217,7 +217,7 @@ const Home = () => {
                   <div className="flex items-start space-x-4">
                     <Clock className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-lg font-semibold mb-2">Opening Hours</h3>
+                      <h3 className="text-lg font-semibold mb-2 text-[#D4AF37]">Opening Hours</h3>
                       <p className="text-gray-300">{businessData.hours.weekdays}</p>
                       <p className="text-gray-300">Sunday: {businessData.hours.sunday}</p>
                     </div>
