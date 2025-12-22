@@ -186,7 +186,7 @@ const Home = () => {
                   <div className="flex items-start space-x-4">
                     <Phone className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-lg font-semibold mb-2">Phone</h3>
+                      <h3 className="text-lg font-semibold mb-2 text-[#D4AF37]">Phone</h3>
                       <a href={`tel:${businessData.phone}`} className="text-cyan-400 hover:text-cyan-300 text-xl">
                         {businessData.phone}
                       </a>
