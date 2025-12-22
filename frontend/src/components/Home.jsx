@@ -148,7 +148,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-semibold mb-2">{reason.title}</h3>
+                    <h3 className="text-2xl font-semibold mb-2 text-[#D4AF37]">{reason.title}</h3>
                     <p className="text-gray-400">{reason.description}</p>
                   </div>
                 </CardContent>
