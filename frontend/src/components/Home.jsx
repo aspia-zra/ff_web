@@ -159,39 +159,63 @@ const Home = () => {
       <section className="py-20 px-6 bg-[#0f0f11]">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <AnimatedSection>
               <h2 className="text-4xl font-bold mb-6 text-[#D4AF37]">Your Local Phone Repair Experts</h2>
               <p className="text-gray-300 text-lg mb-6">
                 Located in the heart of Keynsham on Temple Street, Fix-A-Fone has been serving the community with professional mobile phone repair services. We also offer vape products, accessories, and buy & sell refurbished phones.
               </p>
               <div className="space-y-4">
-                <div className="flex items-start space-x-3">
+                <motion.div 
+                  className="flex items-start space-x-3"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  viewport={{ once: true }}
+                >
                   <div className="w-6 h-6 bg-cyan-600/20 rounded flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-cyan-400 text-sm">✓</span>
                   </div>
                   <p className="text-gray-300">All phone models repaired - iPhone, Samsung, Huawei & more</p>
-                </div>
-                <div className="flex items-start space-x-3">
+                </motion.div>
+                <motion.div 
+                  className="flex items-start space-x-3"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
                   <div className="w-6 h-6 bg-cyan-600/20 rounded flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-cyan-400 text-sm">✓</span>
                   </div>
                   <p className="text-gray-300">Trade-in your phone for cash or upgrade</p>
-                </div>
-                <div className="flex items-start space-x-3">
+                </motion.div>
+                <motion.div 
+                  className="flex items-start space-x-3"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  viewport={{ once: true }}
+                >
                   <div className="w-6 h-6 bg-cyan-600/20 rounded flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-cyan-400 text-sm">✓</span>
                   </div>
                   <p className="text-gray-300">Vape kits and accessories available</p>
-                </div>
+                </motion.div>
               </div>
-            </div>
-            <div className="relative">
-              <img 
-                src="https://customer-assets.emergentagent.com/job_phonedoc-keynsham/artifacts/95a9436d_WhatsApp%20Image%202023-02-06%20at%209.29.49%20AM.jpeg"
-                alt="Fix-A-Fone Keynsham Shop Front"
-                className="rounded-lg shadow-2xl w-full h-auto border border-gray-800"
-              />
-            </div>
+            </AnimatedSection>
+            <AnimatedSection delay={0.2}>
+              <motion.div 
+                className="relative"
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+              >
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_phonedoc-keynsham/artifacts/95a9436d_WhatsApp%20Image%202023-02-06%20at%209.29.49%20AM.jpeg"
+                  alt="Fix-A-Fone Keynsham Shop Front"
+                  className="rounded-lg shadow-2xl w-full h-auto border border-gray-800"
+                />
+              </motion.div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
