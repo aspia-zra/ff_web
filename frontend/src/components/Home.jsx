@@ -85,20 +85,40 @@ const Home = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-6">
         <div className="container mx-auto max-w-6xl text-center">
-          <div className="mb-6">
+          <motion.div 
+            className="mb-6"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             <div className="inline-flex items-center space-x-2 bg-gray-800/50 px-4 py-2 rounded-full mb-6">
               <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
               <span className="text-lg font-semibold">{businessData.rating}</span>
               <span className="text-gray-400">({businessData.reviewCount} reviews)</span>
             </div>
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-[#D4AF37]">
+          </motion.div>
+          <motion.h1 
+            className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-[#D4AF37]"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             {businessData.tagline}
-          </h1>
-          <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+          </motion.h1>
+          <motion.p 
+            className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
             Professional mobile phone repairs in Keynsham. Trusted by hundreds of customers with fast, reliable service.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          </motion.p>
+          <motion.div 
+            className="flex flex-col sm:flex-row gap-4 justify-center"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
             <Button 
               onClick={handleCallClick} 
               size="lg" 
@@ -116,14 +136,22 @@ const Home = () => {
               <MapPin className="w-5 h-5 mr-2" />
               Get Directions
             </Button>
-          </div>
-          <button 
+          </motion.div>
+          <motion.button 
             onClick={() => scrollToSection('services')} 
             className="mt-16 inline-flex flex-col items-center text-gray-400 hover:text-cyan-400 transition-colors"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
           >
             <span className="text-sm mb-2">Explore Our Services</span>
-            <ChevronDown className="w-6 h-6 animate-bounce" />
-          </button>
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+            >
+              <ChevronDown className="w-6 h-6" />
+            </motion.div>
+          </motion.button>
         </div>
       </section>
 
