@@ -135,7 +135,7 @@ const Home = () => {
       <section id="why-choose-us" className="py-20 px-6">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Why Choose Us?</h2>
+            <h2 className="text-4xl font-bold mb-4 text-[#D4AF37]">Why Choose Us?</h2>
             <p className="text-gray-400 text-lg">Trusted by the Keynsham community</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
