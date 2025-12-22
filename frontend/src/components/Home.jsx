@@ -108,6 +108,47 @@ const Home = () => {
         </div>
       </section>
 
+      {/* About Section with Shop Photo */}
+      <section className="py-20 px-6 bg-[#0f0f11]">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold mb-6 text-[#D4AF37]">Your Local Phone Repair Experts</h2>
+              <p className="text-gray-300 text-lg mb-6">
+                Located in the heart of Keynsham on Temple Street, Fix-A-Fone has been serving the community with professional mobile phone repair services. We also offer vape products, accessories, and buy & sell refurbished phones.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-cyan-600/20 rounded flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-cyan-400 text-sm">✓</span>
+                  </div>
+                  <p className="text-gray-300">All phone models repaired - iPhone, Samsung, Huawei & more</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-cyan-600/20 rounded flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-cyan-400 text-sm">✓</span>
+                  </div>
+                  <p className="text-gray-300">Trade-in your phone for cash or upgrade</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-6 h-6 bg-cyan-600/20 rounded flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-cyan-400 text-sm">✓</span>
+                  </div>
+                  <p className="text-gray-300">Vape kits, accessories & pay-as-you-go options</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_phonedoc-keynsham/artifacts/95a9436d_WhatsApp%20Image%202023-02-06%20at%209.29.49%20AM.jpeg"
+                alt="Fix-A-Fone Keynsham Shop Front"
+                className="rounded-lg shadow-2xl w-full h-auto border border-gray-800"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="services" className="py-20 px-6 bg-[#111113]">
         <div className="container mx-auto max-w-6xl">
