@@ -134,7 +134,7 @@ const Home = () => {
                   <div className="w-6 h-6 bg-cyan-600/20 rounded flex items-center justify-center flex-shrink-0 mt-1">
                     <span className="text-cyan-400 text-sm">✓</span>
                   </div>
-                  <p className="text-gray-300">Vape kits, accessories & pay-as-you-go options</p>
+                  <p className="text-gray-300">Vape kits and accessories available</p>
                 </div>
               </div>
             </div>
