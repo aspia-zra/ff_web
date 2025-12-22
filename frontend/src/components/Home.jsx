@@ -73,7 +73,7 @@ const Home = () => {
               <span className="text-gray-400">({businessData.reviewCount} reviews)</span>
             </div>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-[#D4AF37]">
             {businessData.tagline}
           </h1>
           <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
