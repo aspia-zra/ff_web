@@ -162,7 +162,7 @@ const Home = () => {
       <section id="contact" className="py-20 px-6 bg-[#111113]">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Visit Us Today</h2>
+            <h2 className="text-4xl font-bold mb-4 text-[#D4AF37]">Visit Us Today</h2>
             <p className="text-gray-400 text-lg">Find us in the heart of Keynsham</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
