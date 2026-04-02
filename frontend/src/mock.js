@@ -8,7 +8,7 @@ export const businessData = {
   phone: "0117 329 7906",
   address: "2a Temple St, Keynsham, Bristol BS31 1EG",
   hours: {
-    weekdays: "Monday - Saturday: 9:30 AM - 4:30 PM",
+    weekdays: "Monday - Saturday: 9 AM - 5 PM",
     sunday: "Closed"
   },
   mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.3!2d-2.5!3d51.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDI0JzAwLjAiTiAywrAzMCcwMC4wIlc!5e0!3m2!1sen!2suk!4v1234567890"
